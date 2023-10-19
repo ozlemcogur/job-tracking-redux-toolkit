@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "side";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body {
+    background-color: #242424;
+    color: white;
+    min-height: 100vh;
+    font-weight: 400;
+    overflow-x: hidden;
+    font-family:"poppins";
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+
+    h2 {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav {
+    display: flex;
+    gap: 20px;
+    a {
+        text-decoration: none;
+        color : rgb(226, 68, 160);
+        font-size: 19px;
+    }
+    .active {
+        text-shadow: 0 0 0 20px pink;
+
+    }
+ 
+    }
+}
+
+//liste sayfası
+.list-page {
+    padding: 20px;
+}
+
+.job-list{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 50px;
+}
+.card{
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px;
+
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+        margin-bottom: 20px;
+
+        .letter {
+           background-color: purple; 
+           width: 60px;
+           height: 60px;
+           display: grid ;
+           place-items: center;
+           border-radius: 10px;
+           font-size: 30px;
+        }
+        .info {
+            font-size: 20px;
+        }
+
+    }
+    .body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 30px;
+        
+        .field {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        svg {
+            font-size: 20px;
+        }
+        .status {
+           span {
+            padding: 10px 20px;
+            background-color: green;
+            border-radius: 10px;
+           }
+           .interview {
+            background-color: green;
+
+           }
+           .rejected {
+            background-color: red;
+           }
+           .pending {
+            background-color: orange;
+           }
+           .default{
+            background-color: gray;
+           }
+         
+        }
+
+    }
+}
+.error-msg {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.add-page {
+    min-height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+.add-sec{
+    width: 70vw;
+    max-width: 700px;
+    box-shadow: 0 0 55px 0 pink;
+    padding: 25px;
+
+    form {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+    }
+    div input,
+    div select{
+        padding: 10px 15px;
+        margin-top: 5px;
+        border-radius: 5px;
+
+    }
+    div:last-child {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.filter-sec {
+    @extend .add-sec;
+    margin: 20px auto 80px;
+   div:last-child {
+    align-items: unset;
+   }
+}
+
