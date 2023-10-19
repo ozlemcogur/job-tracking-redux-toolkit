@@ -1,8 +1,22 @@
-# React + Vite
+# Job Tracking Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The job tracking application has been developed with the purpose of enhancing job management.
 
-Currently, two official plugins are available:
+## Used Technologies
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React
+- Redux
+- Axios
+- JSON Server
+- React Icons
+- React Router
+- React Toastify
+- Sass
+- UUID 
+
+## Features
+
+- **Job Listing**: Organized display of job listings.
+- **Job Addition**: Ability to add new job entries.
+- **Advanced Filtering**: Enhanced filtering options for refining job searches.
+- **Responsive Design**: Design that seamlessly adapts to various screen sizes and devices.
